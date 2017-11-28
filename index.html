@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Random Words Prototype</title>
+
+    <script type="text/javascript">
+          function random_word(list_x) {
+              var choice = list_x[Math.floor(Math.random() * list_x.length)];
+              return(choice);
+          }
+          var list1 = ['Aaron', 'Ian', 'Lori', 'Henry', 'Nola'];
+          var list2 = ['Ferrucci', 'Ferruch', 'Matsumoto', 'Louise', 'Pierre'];
+          var list3 = ['Sci Fi', 'Mystery', 'Romance', 'Cats', 'History'];
+          var list4 = [
+              "images/Mugshots_0056_Layer_561.jpg",
+              "images/Mugshots_0063_Layer_554.jpg",
+              "images/Mugshots_0316_Layer_300.jpg",
+          ];
+
+          document.write('<font size="10">' + random_word(list1) + " " + random_word(list2) + " " + random_word(list3) + '</font>');
+          document.write('<br>');
+          document.write('<img src="' + random_word(list4)+ '">');
+    </script>
+</head>
+
+<body>
+<br>
+<br>
+<h2>
+<input type="button" value="Shuffle" onClick="location.href=location.href">
+</h2>
+<br>
+</body>
+</html>
